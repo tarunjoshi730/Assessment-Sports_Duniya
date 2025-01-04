@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "Assessment-Sports_Duniya"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "Assessment-Sports_Duniya-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
