@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const fetchNews = createAsyncThunk('news/fetchNews', async () => {
-  const response = await axios.get('https://newsapi.org/v2/everything?q=technology&apiKey=0c6f81a23b034caaaa842a18fce46554');
+  const response = await axios.get('https://newsapi.org/v2/everything?q=technology&apiKey=9216614990d84ae6879661e645caaf5b');
   return response.data.articles;
 });
 
